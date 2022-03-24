@@ -17,17 +17,14 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/upload-artifact@v3
-
-      # Runs a single command using the runners shell
       - shell: bash
         run: |
           expr 1 + 1 > output.log
       - name: Upload output file
         with:
           name: output-log-file
-          path: output/output.txt
+          path: output/out.log
       - name: Download a single artifact
         with:
           name: output/output-log-file
