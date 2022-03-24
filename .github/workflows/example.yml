@@ -24,9 +24,9 @@ jobs:
       - name: Upload output file
         with:
           name: output-log-file
-          path: output/out.log
+          path: simran_kukareja/output/out.log
       - name: Download a single artifact
         with:
-          name: output/output-log-file
+          name: simran_kukareja/output/output-log-file
 
       
