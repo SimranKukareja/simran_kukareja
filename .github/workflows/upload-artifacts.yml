@@ -18,7 +18,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - run: echo hi > world.txt
+      - run: echo hi > sample.txt
       - uses: actions/upload-artifact@v3
         with:
-           path: ./output/world.txt
+           path: ./output/sample.txt
