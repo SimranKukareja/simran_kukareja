@@ -21,4 +21,4 @@ jobs:
       - run: echo hi > world.txt
       - uses: actions/upload-artifact@v3
         with:
-           path: world.txt
+           path: ./output/world.txt
